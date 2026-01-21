@@ -63,5 +63,4 @@ https://github.com/user-attachments/assets/f4db38a7-1c90-49d4-8c44-582d0eefaf2f
    npx @modelcontextprotocol/inspector@latest
    ```
 
-## License
-This project is licensed under the MIT License.
+
