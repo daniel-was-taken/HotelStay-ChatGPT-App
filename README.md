@@ -1,4 +1,4 @@
-# Listo Technical Exercise
+# HotelStay
 
 ## Overview
 This project creates a custom app in ChatGPT that allows users to search for places to stay based on the city provided. The app utilizes a JSON data file containing various hotels, including details such as the cities, amenities, and price per night.
@@ -21,7 +21,7 @@ This project creates a custom app in ChatGPT that allows users to search for pla
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   cd listo-technical-exercise
+   cd HotelStay-ChatGPT-App
    ```
 2. Install frontend dependencies:
    ```bash
@@ -35,15 +35,24 @@ This project creates a custom app in ChatGPT that allows users to search for pla
    ```
 
 ### Running the Application
-- Start the backend server:
+- Start the backend server (in the same terminal):
    ```bash
+   $env:MCP_ALLOWED_HOSTS=""
+   $env:MCP_ALLOWED_ORIGINS=""
    python app.py
    ```
 - Start the frontend application:
    ```bash
    cd web
-   npm install
    npm run build
+   ```
+- Start ngrok to expose the backend server:
+   ```bash
+   ngrok http 8000
+   ```
+- Start MCP inspector to test the app:
+   ```bash
+   npx @modelcontextprotocol/inspector@latest
    ```
 
 ## License
